@@ -16,9 +16,9 @@ public class Client {
     @Id
     private Integer id;
     private String name;
+    private Integer dni;
+    private String type;
     private String address;
     private String email;
-    private String phone;
-    private String type;
-//    private List<String> counts;
+    private Integer phone;
 }
