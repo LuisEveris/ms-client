@@ -19,7 +19,7 @@ public class ClientController {
     @Autowired
     ClientService service;
 
-    @GetMapping("/")
+    @GetMapping
     public Flux<ClientDTO> getAllClients() {
         log.info("getting all clients");
         return service.getAllClients()
@@ -41,7 +41,7 @@ public class ClientController {
                 .map(ResponseEntity::ok);
     }
 
-    @PutMapping("update/{id}")
+    @PutMapping("/update/{id}")
     public Mono<ResponseEntity<ClientDTO>> updateProduct(@PathVariable Integer id,
                                                           @RequestBody Mono<ClientDTO> clientDTOMono) {
         log.info("updating an existing client | id : {}, client : {}", id, clientDTOMono);
