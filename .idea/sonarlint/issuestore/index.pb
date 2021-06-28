@@ -17,3 +17,7 @@ T.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_5_
 Z.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_10_RELEASE.xml,4\2\42e19a55445993f0a65e008506ced82fce671143
 g
 7src/main/java/com/bootcamp/msclient/utils/AppUtils.java,2\a\2a83fa4fc5ecb3f2a382b91fb845510e28dc9138
+7
+HELP.md,1\a\1a273f73b7a477b0745593641bd708a6182c7ad5
+l
+<src/main/java/com/bootcamp/msclient/MsClientApplication.java,a\e\aeff5a385ef6bdcc1caf62bb4e312a6a976b161e
