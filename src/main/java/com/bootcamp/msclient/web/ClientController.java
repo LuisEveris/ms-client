@@ -38,15 +38,17 @@ public class ClientController {
     public Mono<ResponseEntity<ClientDTO>> saveClient(@RequestBody Mono<ClientDTO> clientDTOMono) {
         log.info("saving a client | ClientDTO : {}", clientDTOMono);
         return service.saveClient(clientDTOMono)
-                .map(ResponseEntity::ok);
+                .map(ResponseEntity::ok)
+                .switchIfEmpty(Mono.error(new HttpClientErrorException(HttpStatus.BAD_REQUEST, "The Client with " + clientDTOMono + "was not saved.")));
     }
 
     @PutMapping("/update/{id}")
     public Mono<ResponseEntity<ClientDTO>> updateProduct(@PathVariable Integer id,
-                                                          @RequestBody Mono<ClientDTO> clientDTOMono) {
+                                                         @RequestBody Mono<ClientDTO> clientDTOMono) {
         log.info("updating an existing client | id : {}, client : {}", id, clientDTOMono);
         return service.updateClient(id, clientDTOMono)
-                .map(ResponseEntity::ok);
+                .map(ResponseEntity::ok)
+                .switchIfEmpty(Mono.error(new HttpClientErrorException(HttpStatus.BAD_REQUEST, "The Client with ID " + id + " [" +clientDTOMono + "] not updated.")));
     }
 
     @DeleteMapping("/delete/{id}")
