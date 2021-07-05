@@ -19,8 +19,6 @@ g
 7src/main/java/com/bootcamp/msclient/utils/AppUtils.java,2\a\2a83fa4fc5ecb3f2a382b91fb845510e28dc9138
 7
 HELP.md,1\a\1a273f73b7a477b0745593641bd708a6182c7ad5
-l
-<src/main/java/com/bootcamp/msclient/MsClientApplication.java,a\e\aeff5a385ef6bdcc1caf62bb4e312a6a976b161e
 f
 6.idea/libraries/Maven__com_google_guava_guava_19_0.xml,9\8\9820e255363a8ed216da64c6f0c38a465a2d02e5
 q
@@ -35,5 +33,3 @@ x
 H.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_4.xml,3\d\3d3d73c2d18edc954098ad08e77a7f3708101004
 =
 ms-client.iml,5\6\565a1b146f4b0082c3e51791933573c4aefd2de1
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
