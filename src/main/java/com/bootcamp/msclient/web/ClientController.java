@@ -2,6 +2,7 @@ package com.bootcamp.msclient.web;
 
 import com.bootcamp.msclient.dto.ClientDTO;
 import com.bootcamp.msclient.service.ClientService;
+import com.bootcamp.msclient.topic.ClientProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,6 +19,9 @@ public class ClientController {
 
     @Autowired
     ClientService service;
+
+    @Autowired
+    private ClientProducer producer;
 
     @GetMapping
     public Flux<ClientDTO> getAllClients() {
@@ -38,8 +42,10 @@ public class ClientController {
     public Mono<ResponseEntity<ClientDTO>> saveClient(@RequestBody Mono<ClientDTO> clientDTOMono) {
         log.info("saving a client | ClientDTO : {}", clientDTOMono);
         return service.saveClient(clientDTOMono)
-                .map(ResponseEntity::ok)
-                .switchIfEmpty(Mono.error(new HttpClientErrorException(HttpStatus.BAD_REQUEST, "The Client with " + clientDTOMono + "was not saved.")));
+            .map(client -> {
+                producer.sendClientToTopic(client);
+                return ResponseEntity.ok(client);
+            });
     }
 
     @PutMapping("/update/{id}")

@@ -18,6 +18,7 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+@Disabled
 @ExtendWith(SpringExtension.class)
 @WebFluxTest(controllers = ClientController.class)
 @Import(ClientService.class)

@@ -1,7 +1,10 @@
 C:\Users\llandaur\IdeaProjects\ms-client\src\main\java\com\bootcamp\msclient\utils\AppUtils.java
 C:\Users\llandaur\IdeaProjects\ms-client\src\main\java\com\bootcamp\msclient\web\ClientController.java
+C:\Users\llandaur\IdeaProjects\ms-client\src\main\java\com\bootcamp\msclient\topic\ClientProducerConfig.java
 C:\Users\llandaur\IdeaProjects\ms-client\src\main\java\com\bootcamp\msclient\MsClientApplication.java
 C:\Users\llandaur\IdeaProjects\ms-client\src\main\java\com\bootcamp\msclient\entity\Client.java
 C:\Users\llandaur\IdeaProjects\ms-client\src\main\java\com\bootcamp\msclient\repository\ClientRepository.java
 C:\Users\llandaur\IdeaProjects\ms-client\src\main\java\com\bootcamp\msclient\service\ClientService.java
+C:\Users\llandaur\IdeaProjects\ms-client\src\main\java\com\bootcamp\msclient\topic\ClientTopicConfig.java
 C:\Users\llandaur\IdeaProjects\ms-client\src\main\java\com\bootcamp\msclient\dto\ClientDTO.java
+C:\Users\llandaur\IdeaProjects\ms-client\src\main\java\com\bootcamp\msclient\topic\ClientProducer.java

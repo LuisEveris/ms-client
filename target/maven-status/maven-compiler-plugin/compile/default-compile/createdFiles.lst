@@ -1,7 +1,10 @@
 com\bootcamp\msclient\dto\ClientDTO.class
 com\bootcamp\msclient\repository\ClientRepository.class
+com\bootcamp\msclient\topic\ClientProducer.class
 com\bootcamp\msclient\entity\Client.class
 com\bootcamp\msclient\utils\AppUtils.class
 com\bootcamp\msclient\web\ClientController.class
 com\bootcamp\msclient\MsClientApplication.class
+com\bootcamp\msclient\topic\ClientProducerConfig.class
+com\bootcamp\msclient\topic\ClientTopicConfig.class
 com\bootcamp\msclient\service\ClientService.class

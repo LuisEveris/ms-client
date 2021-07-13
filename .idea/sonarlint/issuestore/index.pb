@@ -31,5 +31,3 @@ p
 @.idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml,0\6\0604c6775320884c8280cf92f6435c214f8dfb6d
 x
 H.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_4.xml,3\d\3d3d73c2d18edc954098ad08e77a7f3708101004
-=
-ms-client.iml,5\6\565a1b146f4b0082c3e51791933573c4aefd2de1
